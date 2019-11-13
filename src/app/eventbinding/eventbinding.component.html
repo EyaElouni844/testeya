@@ -1,0 +1,4 @@
+<input type="text" #textbox>
+<button  (click)="onAfficher(textbox.value)">Afficher</button>
+<input type ="text" (keyup.enter)="onKeyUp($event)"  />
+{{contenu}}

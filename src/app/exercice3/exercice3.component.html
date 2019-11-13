@@ -1,0 +1,8 @@
+<h1>Operation de calcul</h1>
+<p>donner un premier nombre</p>
+<input type="text" (keyup.enter)="onKeyUp($event)"/>
+<p>le carré est :</p>{{entier*entier}}
+<p>donner un deuxieme nombre</p>
+<input type="text" #txtbox>
+<button (click)="aff(txtbox.value)">somme</button>
+<p>la somme est :</p>{{somme()}}

@@ -1,0 +1,11 @@
+<h1>Liste des profils</h1>
+<ul> 
+        <li *ngFor="let t of profils; let indice=index" value={{t}}> {{t}} 
+        </li> 
+    </ul>
+<p>choix d'un profil</p>
+<select [(ngModel)]="profil">
+       <option *ngFor="let t of profils">{{t}}</option>
+</select>
+<p *ngIf="profil=='Admin' ">
+le profil séléctionné est: {{profil}} </p>

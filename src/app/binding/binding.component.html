@@ -1,0 +1,6 @@
+<p>binding works {{nom}} !</p>
+<p>taille {{taille()}} </p>
+<p>en majuscules {{majuscules()}} </p>
+<h1>Bonjour {{nom}} </h1>
+<input type ="text" [value]="nom" [disabled]="actif"/>
+<button bind-disabled="!actif"> Afficher</button>

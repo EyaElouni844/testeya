@@ -1,0 +1,16 @@
+<h1>Orientation Etudiant</h1>
+<ul>  
+    <li >Nom : {{etudiant.nom}} </li>
+    <li>Moyenne : {{etudiant.moyenne}}</li>
+    <li *ngIf="etudiant.moyenne<10 ; else admis"> Décision : Redouble </li>
+     <ng-template #admis>
+     <li>choisir un spécilité
+         <select [(ngModel)]="orienation">
+             <option>RSI</option>
+             <option>DSI</option>
+             <option>SEM</option>
+         </select>vous avez choisi {{orienation}} </li>
+     </ng-template>   
+
+</ul>
+

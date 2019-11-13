@@ -1,0 +1,8 @@
+<h1>Correspondance Mois/Saison</h1>
+<p>Donner un numero de mois</p>
+<input type="text" [(ngModel)]="mois"/>
+<div [ngSwitch]="true">
+    <p *ngSwitchCase="mois<=4">hiver</p>
+    <p *ngSwitchCase="mois>=5 && mois<=6 ">printemps</p>
+    <p *ngSwitchCase="mois>=7">summer</p>
+</div>
